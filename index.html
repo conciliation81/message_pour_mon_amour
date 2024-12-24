@@ -37,43 +37,24 @@
             margin-top: 20px;
             color: #999;
         }
-        .balloon, .heart, .balloon2, .heart2, .balloon3, .heart3, .balloon4, .heart4 {
+        .balloon, .heart, .balloon2, .heart2 {
             position: absolute;
             animation: float 5s infinite;
         }
         .balloon {
             top: 10px;
-            left: 10px;
-            width: 50px; /* Réduit la taille des ballons */
-        }
-        .balloon2 {
-            top: 10px;
-            right: 10px;
-            width: 50px; /* Réduit la taille des ballons */
-            animation-delay: 2s;
-        }
-        .balloon3 {
-            bottom: 10px;
-            left: 10px;
-            width: 50px; /* Réduit la taille des ballons */
-            animation-delay: 4s;
-        }
-        .balloon4 {
-            bottom: 10px;
-            right: 10px;
-            width: 50px; /* Réduit la taille des ballons */
-            animation-delay: 6s;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px; /* Réduit la taille du ballon */
         }
         .heart {
-            top: 50%;
+            top: 10px;
             left: 10px;
-            transform: translateY(-50%);
             width: 50px; /* Réduit la taille des cœurs */
         }
         .heart2 {
-            top: 50%;
+            bottom: 10px;
             right: 10px;
-            transform: translateY(-50%);
             width: 50px; /* Réduit la taille des cœurs */
             animation-delay: 2s;
         }
@@ -109,15 +90,6 @@
         <div class="balloon">
             <img src="ballon.png" alt="Ballon d'air">
         </div>
-        <div class="balloon2">
-            <img src="ballon.png" alt="Ballon d'air">
-        </div>
-        <div class="balloon3">
-            <img src="ballon.png" alt="Ballon d'air">
-        </div>
-        <div class="balloon4">
-            <img src="ballon.png" alt="Ballon d'air">
-        </div>
         <div class="heart">
             <img src="coeur.png" alt="Cœur">
         </div>
@@ -130,4 +102,5 @@
     </div>
 </body>
 </html>
+
 
