@@ -42,21 +42,20 @@
             animation: float 5s infinite;
         }
         .balloon {
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px; /* Réduit la taille du ballon */
-        }
-        .heart {
             top: 5px;
             left: 10px;
-            width: 50px; /* Réduit la taille des cœurs */
+            width: 50px; /* Réduit la taille des ballons */
         }
-        .heart2 {
+        .balloon2 {
             top: 5px;
             right: 10px;
-            width: 50px; /* Réduit la taille des cœurs */
+            width: 50px; /* Réduit la taille des ballons */
             animation-delay: 2s;
+        }
+        .heart {
+            bottom: 10px;
+            left: 10px;
+            width: 50px; /* Réduit la taille des cœurs */
         }
         @keyframes float {
             0% { transform: translateY(0); }
@@ -90,10 +89,10 @@
         <div class="balloon">
             <img src="ballon.png" alt="Ballon d'air">
         </div>
-        <div class="heart">
-            <img src="coeur.png" alt="Cœur">
+        <div class="balloon2">
+            <img src="ballon.png" alt="Ballon d'air">
         </div>
-        <div class="heart2">
+        <div class="heart">
             <img src="coeur.png" alt="Cœur">
         </div>
         <div class="love-message">
@@ -102,5 +101,3 @@
     </div>
 </body>
 </html>
-
-
